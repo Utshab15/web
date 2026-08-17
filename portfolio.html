@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio — Pathak Web Works project highlights with measurable business outcomes." />
+  <title>Portfolio | Pathak Web Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo-text">Pathak Web Works</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="services.html" target="_blank" rel="noopener noreferrer">Services</a>
+        <a href="process.html" target="_blank" rel="noopener noreferrer">Our Process</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+      </nav>
+      <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <a href="services.html" target="_blank" rel="noopener noreferrer">Services</a>
+        <a href="process.html" target="_blank" rel="noopener noreferrer">Our Process</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+        <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Our Work</p>
+        <h1>Portfolio & Work <span class="gradient-text">Highlights</span></h1>
+        <p>Real projects with measurable outcomes for businesses across industries.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="portfolio-tabs reveal" role="tablist">
+          <button class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="tab" data-filter="web-apps" role="tab" aria-selected="false">Web Apps</button>
+          <button class="tab" data-filter="ecommerce" role="tab" aria-selected="false">E-Commerce</button>
+          <button class="tab" data-filter="landing" role="tab" aria-selected="false">Landing Pages</button>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <article class="portfolio-card reveal" data-category="web-apps">
+            <div class="portfolio-preview gradient-1"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">SaaS</span>
+              <h3>CloudSync Dashboard</h3>
+              <p>Real-time analytics platform with custom admin panel and API integrations.</p>
+              <div class="outcome">+85% User Engagement</div>
+              <a href="https://example.com/cloudsync" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="ecommerce">
+            <div class="portfolio-preview gradient-2"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Retail</span>
+              <h3>Urban Threads Store</h3>
+              <p>Full Shopify e-commerce with custom theme and payment gateway setup.</p>
+              <div class="outcome">+120% Conversion Rate Boost</div>
+              <a href="https://example.com/urban-threads" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="landing">
+            <div class="portfolio-preview gradient-3"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Agency</span>
+              <h3>PixelForge Landing</h3>
+              <p>High-converting landing page with A/B tested hero and lead capture funnel.</p>
+              <div class="outcome">+200% Lead Generation</div>
+              <a href="https://example.com/pixelforge" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="web-apps">
+            <div class="portfolio-preview gradient-4"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Healthcare</span>
+              <h3>MedConnect Portal</h3>
+              <p>Patient management web app with secure authentication and scheduling.</p>
+              <div class="outcome">-40% Admin Time Saved</div>
+              <a href="https://example.com/medconnect" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="ecommerce">
+            <div class="portfolio-preview gradient-5"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Food & Beverage</span>
+              <h3>FreshBite Market</h3>
+              <p>Multi-vendor marketplace with inventory sync and delivery tracking.</p>
+              <div class="outcome">+95% Order Volume</div>
+              <a href="https://example.com/freshbite" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="landing">
+            <div class="portfolio-preview gradient-6"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Startup</span>
+              <h3>LaunchPad Pro</h3>
+              <p>Product launch page with waitlist integration and social proof widgets.</p>
+              <div class="outcome">5K+ Sign-ups in 30 Days</div>
+              <a href="https://example.com/launchpad" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span class="logo-text">Pathak Web Works</span>
+        </a>
+        <p>Modern web development studio delivering fast, scalable, and custom digital solutions.</p>
+        <div class="availability"><span class="status-dot"></span>Available for new projects</div>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="services.html" target="_blank" rel="noopener noreferrer">Services</a>
+        <a href="process.html" target="_blank" rel="noopener noreferrer">Our Process</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+        <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="https://pathakwebworks.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        <a href="https://pathakwebworks.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+        <a href="https://pathakwebworks.com/cookie-policy" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <a href="https://www.linkedin.com/company/pathak-web-works" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/pathakwebworks" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://github.com/pathakwebworks" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.instagram.com/pathakwebworks" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Pathak Web Works. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

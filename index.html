@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pathak Web Works — Modern web development studio delivering fast, scalable, and custom digital solutions." />
+  <title>Pathak Web Works | High-Performance Web Development Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo-text">Pathak Web Works</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="services.html" target="_blank" rel="noopener noreferrer">Services</a>
+        <a href="process.html" target="_blank" rel="noopener noreferrer">Our Process</a>
+        <a href="portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+      </nav>
+      <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <a href="services.html" target="_blank" rel="noopener noreferrer">Services</a>
+        <a href="process.html" target="_blank" rel="noopener noreferrer">Our Process</a>
+        <a href="portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+        <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Modern Web Development Studio</p>
+          <h1>Crafting High-Performance Websites That Scale Your Business — <span class="gradient-text">Pathak Web Works</span></h1>
+          <p class="hero-sub">We turn ideas into ultra-fast, modern, and conversion-focused websites engineered for real business growth.</p>
+          <div class="hero-actions">
+            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">Start Your Project</a>
+            <a href="portfolio.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Explore Our Work</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>99+</strong><span>PageSpeed Score</span></div>
+            <div class="stat"><strong>100%</strong><span>Mobile Responsive</span></div>
+            <div class="stat"><strong>2hr</strong><span>Response Time</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="150">
+          <div class="device-mockup">
+            <div class="device-toolbar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <div class="viewport-toggles">
+                <button class="viewport-btn active" data-view="desktop" aria-label="Desktop view">Desktop</button>
+                <button class="viewport-btn" data-view="tablet" aria-label="Tablet view">Tablet</button>
+                <button class="viewport-btn" data-view="mobile" aria-label="Mobile view">Mobile</button>
+              </div>
+            </div>
+            <div class="device-screen" id="deviceScreen">
+              <div class="preview-site">
+                <div class="preview-nav"></div>
+                <div class="preview-hero-block"></div>
+                <div class="preview-cards">
+                  <div class="preview-card"></div>
+                  <div class="preview-card"></div>
+                  <div class="preview-card"></div>
+                </div>
+              </div>
+            </div>
+            <div class="perf-badge">
+              <span class="badge-icon">⚡</span>
+              <div>
+                <strong>99 PageSpeed</strong>
+                <span>Performance Score</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Marquee -->
+    <section class="marquee-section" aria-label="Technologies we use">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>React</span><span>Next.js</span><span>Node.js</span><span>Tailwind CSS</span><span>WordPress</span><span>Shopify</span><span>Framer</span>
+          <span>React</span><span>Next.js</span><span>Node.js</span><span>Tailwind CSS</span><span>WordPress</span><span>Shopify</span><span>Framer</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="trust-badges reveal">
+          <span class="trust-badge">100% Mobile Responsive</span>
+          <span class="trust-badge">Ultra-Fast Load Times</span>
+          <span class="trust-badge">Custom Engineering</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">What We Do</p>
+          <h2>Core Services Built for Growth</h2>
+          <p class="section-desc">End-to-end digital solutions engineered with precision, speed, and scalability in mind.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">🚀</div>
+            <h3>Custom Web Development</h3>
+            <p>Fast, tailored web applications built from scratch with clean, maintainable code.</p>
+            <div class="tags"><span>React</span><span>Next.js</span><span>Node.js</span></div>
+          </article>
+          <article class="service-card reveal" data-delay="100">
+            <div class="service-icon">🛒</div>
+            <h3>E-Commerce Platforms</h3>
+            <p>Scalable online stores with secure checkout and seamless payment integrations.</p>
+            <div class="tags"><span>Shopify</span><span>Stripe</span><span>WooCommerce</span></div>
+          </article>
+          <article class="service-card reveal" data-delay="200">
+            <div class="service-icon">🎨</div>
+            <h3>UI/UX & Site Redesign</h3>
+            <p>Modernizing outdated interfaces into sleek, high-converting digital experiences.</p>
+            <div class="tags"><span>Figma</span><span>Framer</span><span>Design Systems</span></div>
+          </article>
+          <article class="service-card reveal" data-delay="300">
+            <div class="service-icon">⚡</div>
+            <h3>Performance & Maintenance</h3>
+            <p>Ongoing speed optimization, SEO enhancement, and technical management.</p>
+            <div class="tags"><span>SEO</span><span>Core Web Vitals</span><span>Monitoring</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section section-alt" id="portfolio">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Our Work</p>
+          <h2>Portfolio & Work Highlights</h2>
+          <p class="section-desc">Real projects with measurable outcomes for businesses across industries.</p>
+        </div>
+        <div class="portfolio-tabs reveal" role="tablist">
+          <button class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="tab" data-filter="web-apps" role="tab" aria-selected="false">Web Apps</button>
+          <button class="tab" data-filter="ecommerce" role="tab" aria-selected="false">E-Commerce</button>
+          <button class="tab" data-filter="landing" role="tab" aria-selected="false">Landing Pages</button>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <article class="portfolio-card reveal" data-category="web-apps">
+            <div class="portfolio-preview gradient-1"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">SaaS</span>
+              <h3>CloudSync Dashboard</h3>
+              <p>Real-time analytics platform with custom admin panel and API integrations.</p>
+              <div class="outcome">+85% User Engagement</div>
+              <a href="https://example.com/cloudsync" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="ecommerce">
+            <div class="portfolio-preview gradient-2"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Retail</span>
+              <h3>Urban Threads Store</h3>
+              <p>Full Shopify e-commerce with custom theme and payment gateway setup.</p>
+              <div class="outcome">+120% Conversion Rate Boost</div>
+              <a href="https://example.com/urban-threads" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="landing">
+            <div class="portfolio-preview gradient-3"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Agency</span>
+              <h3>PixelForge Landing</h3>
+              <p>High-converting landing page with A/B tested hero and lead capture funnel.</p>
+              <div class="outcome">+200% Lead Generation</div>
+              <a href="https://example.com/pixelforge" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="web-apps">
+            <div class="portfolio-preview gradient-4"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Healthcare</span>
+              <h3>MedConnect Portal</h3>
+              <p>Patient management web app with secure authentication and scheduling.</p>
+              <div class="outcome">-40% Admin Time Saved</div>
+              <a href="https://example.com/medconnect" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="ecommerce">
+            <div class="portfolio-preview gradient-5"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Food & Beverage</span>
+              <h3>FreshBite Market</h3>
+              <p>Multi-vendor marketplace with inventory sync and delivery tracking.</p>
+              <div class="outcome">+95% Order Volume</div>
+              <a href="https://example.com/freshbite" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="landing">
+            <div class="portfolio-preview gradient-6"></div>
+            <div class="portfolio-body">
+              <span class="industry-tag">Startup</span>
+              <h3>LaunchPad Pro</h3>
+              <p>Product launch page with waitlist integration and social proof widgets.</p>
+              <div class="outcome">5K+ Sign-ups in 30 Days</div>
+              <a href="https://example.com/launchpad" class="portfolio-link" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Process -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <p class="eyebrow">About Us</p>
+            <h2>About Pathak Web Works</h2>
+            <p>We are a modern web development studio committed to technical precision, transparent communication, and rapid turnaround times. Every project is engineered with performance-first architecture and conversion-focused design.</p>
+            <p>From startups to established businesses, we partner with clients who value quality code, measurable results, and a seamless development experience.</p>
+          </div>
+          <div class="process-section reveal" id="process" data-delay="150">
+            <p class="eyebrow">How We Work</p>
+            <h2>Our 4-Step Process</h2>
+            <div class="process-pipeline">
+              <div class="process-step">
+                <span class="step-num">01</span>
+                <div>
+                  <h3>Discovery & Strategy</h3>
+                  <p>We analyze your goals, audience, and competitors to define a clear project roadmap.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="step-num">02</span>
+                <div>
+                  <h3>UI/UX Design Prototyping</h3>
+                  <p>Wireframes and interactive prototypes ensure the design aligns with your vision.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="step-num">03</span>
+                <div>
+                  <h3>Clean Code Development</h3>
+                  <p>Production-ready code built with modern frameworks and best practices.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="step-num">04</span>
+                <div>
+                  <h3>QA & Launch</h3>
+                  <p>Rigorous testing, performance audits, and a smooth deployment to production.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section-alt" id="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Transparent Pricing</p>
+          <h2>Plans That Fit Your Scope</h2>
+          <p class="section-desc">Clear deliverables, honest timelines, and no hidden fees.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <h3>Starter Landing Page</h3>
+            <div class="price"><span class="currency">$</span>499<span class="period">+</span></div>
+            <p class="price-desc">Perfect for product launches and lead generation.</p>
+            <ul class="feature-list">
+              <li>Single-page responsive design</li>
+              <li>Contact form integration</li>
+              <li>Basic SEO setup</li>
+              <li>1 revision round</li>
+              <li>5–7 day delivery</li>
+            </ul>
+            <button class="btn btn-outline select-plan" data-plan="starter">Select Plan</button>
+          </article>
+          <article class="pricing-card featured reveal" data-delay="100">
+            <span class="popular-badge">Most Popular</span>
+            <h3>Full Business Website</h3>
+            <div class="price"><span class="currency">$</span>1,499<span class="period">+</span></div>
+            <p class="price-desc">Complete multi-page site for growing businesses.</p>
+            <ul class="feature-list">
+              <li>Up to 8 custom pages</li>
+              <li>CMS integration</li>
+              <li>Advanced SEO & analytics</li>
+              <li>3 revision rounds</li>
+              <li>2–3 week delivery</li>
+            </ul>
+            <button class="btn btn-primary btn-glow select-plan" data-plan="business">Select Plan</button>
+          </article>
+          <article class="pricing-card reveal" data-delay="200">
+            <h3>Custom E-Commerce</h3>
+            <div class="price"><span class="currency">$</span>2,999<span class="period">+</span></div>
+            <p class="price-desc">Full online store with payment and inventory setup.</p>
+            <ul class="feature-list">
+              <li>Custom store design</li>
+              <li>Payment gateway setup</li>
+              <li>Product management system</li>
+              <li>Performance optimization</li>
+              <li>3–5 week delivery</li>
+            </ul>
+            <button class="btn btn-outline select-plan" data-plan="ecommerce">Select Plan</button>
+          </article>
+        </div>
+
+        <!-- Scope Estimator -->
+        <div class="estimator reveal" id="estimator">
+          <h3>Interactive Scope Estimator</h3>
+          <p>Select features to estimate your project scope in real time.</p>
+          <div class="estimator-grid">
+            <div class="estimator-options">
+              <label class="check-item"><input type="checkbox" data-cost="200" /> Custom animations & interactions</label>
+              <label class="check-item"><input type="checkbox" data-cost="150" /> Blog / CMS integration</label>
+              <label class="check-item"><input type="checkbox" data-cost="300" /> E-commerce functionality</label>
+              <label class="check-item"><input type="checkbox" data-cost="100" /> Multi-language support</label>
+              <label class="check-item"><input type="checkbox" data-cost="250" /> Custom admin dashboard</label>
+              <label class="check-item"><input type="checkbox" data-cost="175" /> Advanced SEO package</label>
+              <label class="check-item"><input type="checkbox" data-cost="125" /> Analytics & tracking setup</label>
+              <label class="check-item"><input type="checkbox" data-cost="200" /> Third-party API integrations</label>
+            </div>
+            <div class="estimator-result glass-card">
+              <p class="est-label">Estimated Starting Price</p>
+              <div class="est-price" id="estPrice">$499</div>
+              <p class="est-note">Base plan + selected features. Final quote provided after consultation.</p>
+              <a href="#contact" class="btn btn-primary btn-glow">Get Custom Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Get In Touch</p>
+          <h2>Start Your Project Today</h2>
+          <p class="section-desc">Tell us about your vision — we'll respond within 2 hours.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="glass-card contact-card">
+              <h3>Direct Contact</h3>
+              <p class="response-guarantee">⚡ We reply within <strong>2 hours</strong></p>
+              <ul class="contact-details">
+                <li>
+                  <span class="contact-icon">✉️</span>
+                  <div>
+                    <strong>Email</strong>
+                    <a href="mailto:hello@pathakwebworks.com">hello@pathakwebworks.com</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon">📞</span>
+                  <div>
+                    <strong>Phone</strong>
+                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon">📍</span>
+                  <div>
+                    <strong>Location</strong>
+                    <span>Remote-first, Worldwide</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/company/pathak-web-works" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com/pathakwebworks" aria-label="Twitter" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://github.com/pathakwebworks" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.instagram.com/pathakwebworks" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </div>
+              <div class="booking-widget">
+                <h4>Book a Free Consultation</h4>
+                <p>Schedule a 30-minute discovery call at your convenience.</p>
+                <a href="https://calendly.com/pathakwebworks" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Calendar</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form glass-card reveal" id="contactForm" data-delay="150" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name" />
+                <span class="error-msg" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@company.com" />
+                <span class="error-msg" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Service Type</label>
+              <div class="chip-group" id="serviceChips">
+                <button type="button" class="chip" data-value="landing">Landing Page</button>
+                <button type="button" class="chip" data-value="ecommerce">E-Commerce</button>
+                <button type="button" class="chip" data-value="webapp">Web App</button>
+                <button type="button" class="chip" data-value="redesign">Redesign</button>
+              </div>
+              <input type="hidden" id="serviceType" name="serviceType" />
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select budget range</option>
+                <option value="under-1k">Under $1,000</option>
+                <option value="1k-3k">$1,000 – $3,000</option>
+                <option value="3k-5k">$3,000 – $5,000</option>
+                <option value="5k-plus">$5,000+</option>
+              </select>
+              <span class="error-msg" id="budgetError"></span>
+            </div>
+            <div class="form-group">
+              <label for="details">Project Details</label>
+              <textarea id="details" name="details" rows="4" placeholder="Tell us about your project, goals, and timeline..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="brief">Project Brief (optional)</label>
+              <div class="file-upload">
+                <input type="file" id="brief" name="brief" accept=".pdf,.doc,.docx,.txt,.png,.jpg" />
+                <label for="brief" class="file-label">
+                  <span class="file-icon">📎</span>
+                  <span id="fileName">Drop file or click to upload</span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-glow btn-full">Send Project Request →</button>
+            <p class="form-success" id="formSuccess" hidden>Thank you! We'll get back to you within 2 hours.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span class="logo-text">Pathak Web Works</span>
+        </a>
+        <p>Modern web development studio delivering fast, scalable, and custom digital solutions.</p>
+        <div class="availability">
+          <span class="status-dot"></span>
+          Available for new projects
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="services.html" target="_blank" rel="noopener noreferrer">Services</a>
+        <a href="process.html" target="_blank" rel="noopener noreferrer">Our Process</a>
+        <a href="portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+        <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="https://pathakwebworks.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        <a href="https://pathakwebworks.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+        <a href="https://pathakwebworks.com/cookie-policy" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <a href="https://www.linkedin.com/company/pathak-web-works" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/pathakwebworks" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://github.com/pathakwebworks" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.instagram.com/pathakwebworks" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Pathak Web Works. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
